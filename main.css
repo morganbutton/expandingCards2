@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+
+
  .panel h3{
     font-family: 'Open Sans', sans-serif;
     color:white;
@@ -9,26 +11,41 @@
     left: 20px;
     opacity: 0;
 }
+.bodyContainer {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
 .panel{
     position: relative;
     height:350px;
+    width:60px;
     flex:0.5;
-    transition: all 700ms ease-in;
-    border-radius: 50px;
+    transition: flex 700ms ease-in;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .panel.active{
     flex:5;
 }
 .panel.active h3{
     opacity: 1;
-    transition: opacity 3s ease-in;
+    transition: opacity 500ms ease-in ;
 }
 .container{
-    width: 50vw;
+    width: 80vw;
     margin:0 auto;
     display: flex;
     gap:10px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
